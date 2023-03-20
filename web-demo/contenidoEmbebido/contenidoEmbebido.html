@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContenidoEmbebido</title>
+    <style>
+        img{
+            max-width: 100%;
+            
+        }
+        video{
+            max-width: 100%;
+            max-height: 100%;
+            width: 200px;
+        }
+    </style>
+</head>
+<!--
+    el contenido embebido es todo el contenido que nosotros traemos desde afuera
+    estos archivos son los mas pesados(tamaño) añanden a  un sitio web
+    los tipos mas conocidos son:
+    imagenes,Audios,videos,iframes
+    
+    imagenes:
+    los formatos de las imagenes para web los podemis clasificar en 2 tipos 
+    victoriales: svg(recomendado siempre que se pueda)
+    el otro tipo es:
+    Mapa de bits
+    jpg
+    png(8 a 24 bits(si necesitas trasparencias))
+    gif(si necesitas una imagen animada)
+    webp(el formato que menos pesa)
+    inconos,fotos no relebantes usar svg no se pierde calidad al hacer zoom
+    si la imagen que voy a poner en la pagina no necesita trasparencia ni animacion usamos formato jpg
+    png: soporta trasparencias
+    gif para imagenes animas
+
+    DPR(DEVICE PIXEL RATIO)
+    ES LA RELACION  QUE EXISTE ENTRE LOS PIXELES REALES QUE TIENE EL DISPOSITIVO PARA PINTAR CONTENIDO
+
+    DPR= PIXELES REALES/ PIXELES DISPONIBLES 
+-->
+<body>
+    <h1>contenido embebido</h1>
+    <!--<img src="/contenidoEmbebido/assets/imagenes/Pikachu.giF" alt="PIKACHU BAILANDO">
+    <img src="/contenidoEmbebido/assets/imagenes/social-facebook.svg" alt="FACEBOOK">
+    <img src="/contenidoEmbebido/assets/imagenes/portada.jpg" width="300px">-->
+
+    <!--<img srcset="
+    /contenidoEmbebido/assets/imagenes/portada.webp,
+    /contenidoEmbebido/assets/imagenes/portada.jpg,
+    /contenidoEmbebido/assets/imagenes/portada-mobile.webp 2x,
+    /contenidoEmbebido/assets/imagenes/portada-mobile.jpg 2x" 
+    src="/contenidoEmbebido/assets/imagenes/portada.jpg"
+    alt="Imagen de portada" >
+es como srcset pero nos da mas opciones
+-->
+    <!--<picture>
+        <source srcset="
+        /contenidoEmbebido/assets/imagenes/portada.webp,
+        /contenidoEmbebido/assets/imagenes/portada.jpg,">
+        <img src="/contenidoEmbebido/assets/imagenes/nala.png" alt="portada">-->
+        <!--<source srcset="/contenidoEmbebido/assets/imagenes/portada-mobile.webp" media="(min-width:1200px)">
+        <img src="/contenidoEmbebido/assets/imagenes/portada.jpg" alt="portada">
+        <source srcset="/contenidoEmbebido/assets/imagenes/portada-mobile.webp" media="(max-width:1200px)">
+       <img src="/contenidoEmbebido/assets/imagenes/portada.jpg" alt="portada">
+    controls atributo necesario para poder resproducir el video o audio
+    muted: silencia por defecto el video o audio
+    loop repide el video o audio
+    autoplay: repruduce automaticamente el video o audio cuando carga la pagina
+    poster:que es para eligir la portada del video
+   
+    </picture> -->
+   <!--- <audio src="/contenidoEmbebido/assets/audio/eltaxi.mp3"controls autoplay muted></audio>
+    <br>
+    <video src="/contenidoEmbebido/assets/videos/VID_20220417_142425.mp4"controls  muted loop poster="/contenidoEmbebido/assets/imagenes/Pikachu.gif" autoplay ></video>
+<br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/F_wO8LXFwzI"></iframe>-->
+    <h2>Gatos</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nam soluta cum hic? Consequuntur delectus quidem corporis iure nesciunt laboriosam, ipsa beatae sed saepe possimus quasi! Qui placeat expedita sint?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi ipsum, ratione at nesciunt maxime vel consequuntur natus est libero reiciendis nihil placeat nulla possimus harum autem tempora, deserunt perferendis delectus?</p>
+    <figure>
+        <img src="https://images.unsplash.com/photo-1618197345752-7706bc9436a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alto="gato durmiendo">
+        <figcaption>Gato acostado</figcaption>
+    </figure>
+    
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--
+    radio: permite seleccionar una unica opcion de una lista de opciones relacionadas.
+
+    checkbox: permite selecionar varias opciones de una lista de opciones relacionada
+
+    select: crea una lista de opciones donde podemos seleccionar una o varias opciones
+
+    cada opcion ira dentro de una etiqueta <option></option>
+    
+    si tenemos muchas opciones podemos ordenarlas por categoria a travez de la etiqueta <optgroup> con el atributo label para nombrar la categoria
+        cheked atributo para `poner ese input seleccionado por defecto
+-->
+  <body>
+    <h1>Elementos seleccionables</h1>
+    <form>
+      <!--<h2>Genero</h2>
+        <label>
+            Masculino
+            <input type="radio" name="gender" value="masculino">
+        </label>
+        <label>
+            Femenino
+            <input type="radio" name="gender" value="femenino">
+        </label>
+        <label>
+            Desconocido
+            <input type="radio" name="gender" value="desconocido">
+        </label>
+        <h2>Lenguaje que conoces</h2>
+        <label>
+            HTML
+            <input type="checkbox"name="langues"value="html">
+        </label>
+        <label>
+            CSS
+            <input type="checkbox" name="langues"value="css">
+            
+        </label>
+        <label>
+            javascript
+            <input type="checkbox" name="langues"value="javascript">
+            <
+        </label>-->
+      <!-- <select name="lenguajes"> atributo multiple nos permite seleccionar mas de uno
+            <option value="html">HTML</option>
+            <option value="css">css</option>
+            <option value="javascript">javascript</option>
+        </select>-->
+      <select name="mascotas">
+        <optgroup label="4 patas">
+          <option value="perro">Perro</option>
+          <option value="Gato">Gato</option>
+          <option value="Hamster">Hamster</option>
+          <option value="conejo">conejo</option>
+        </optgroup>
+        <optgroup label="aves">
+          <option value="loro">loro</option>
+          <option value="canario">Canario</option>
+        </optgroup>
+        <optgroup label="otros">
+          <option value="Serpiente">Serpiente</option>
+          <option value="Tarantula">Tarantula</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>

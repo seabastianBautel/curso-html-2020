@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tablas</title>
+
+    <style>
+        col:nth-child(1){
+            background-color:lightcoral;
+        }
+        
+        col:nth-child(2){
+            background-color:steelblue;
+        }
+    </style>
+  </head>
+  <body>
+    <!--
+        Las tablas en html sirvern para mostrar contenido tabulado.
+
+        La estructura basica de una tabla se componen de table-> Etiqueta que encierra una tabla 
+        tr -> table row, etiqueta que construye una fila
+        td->table data, etiqueta que contruye una celda
+
+        truco:el numero de las celdas dentro de un td establecera el numero de columnas de la tabla 
+
+        Los titulos  de las tablas se establecen con la etiqueta caption, es una etiqueta opcional, y segun las especificaciones esa etiqueta se coloca justo depues de la etiqueta table
+
+        Las cabeceras de las tablas se establecen con la etiqueta thead.
+        Dentro tendremos una etiqueta tr normal,pero en el caso de las celdas, las estableceremos con la etiquet ba th en lugar de td
+
+        el contenido de la tabla debe ir dentro de una etiqueta tbody para representar el ceurpo de la tabla
+
+        de forma opcional podemos colocar un tfoot a la tabla para establecer un pie de tabla,esto es algo que algunas tablas tienen como suma de cantidades o total.
+
+        para hacer las celdas ocupen mas de una fila o mas de una columna tenemos 2 atributos:
+        rowspan: sirve para que una celda ocupe mas de una fila.el valor por defecto es 1 
+        colspan: sirve para que una celda ocupe mas de una columna,el valor por defecto es 1
+    -->
+    <table>
+      <caption>
+        HORARIOS DE CLASES
+      </caption>
+      <colgroup>
+        <col span="5">
+        <col>
+    </colgroup>
+      <thead>
+        <tr>
+          <th></th>
+          <th>L</th>
+          <th>M</th>
+          <th>X</th>
+          <th>J</th>
+          <th>V</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:30-9:30</td>
+          <td>Matematicas</td>
+          <td>Matematicas</td>
+          <td>Sociales</td>
+          <td>Matematicas</td>
+          <td>Matematicas</td>
+        </tr>
+
+        <tr>
+          <td>9:30-10:25</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Matematicas</td>
+          <td>Ciencias</td>
+          <td>Lengua</td>
+        </tr>
+
+        <tr>
+          <td>10:25-11:20</td>
+          <td>Educacion fisica</td>
+          <td>Ciencias</td>
+          <td>Lengua</td>
+          <td>Lengua</td>
+          <td>Educacion fisica</td>
+        </tr>
+
+        <tr>
+          <td>11:20-11:45</td>
+          <td colspan="5">Recreo</td>
+        </tr>
+
+        <tr>
+          <td>11:45-12:40</td>
+          <td>Ingles</td>
+          <td>sociales</td>
+          <td>Ingles</td>
+          <td>Tutorias</td>
+          <td>Ingles</td>
+        </tr>
+
+        <tr>
+          <td>12:40-13:35</td>
+          <td rowspan="2">Tecnologia</td>
+          <td>Educacion Fisica</td>
+          <td>Plastica</td>
+          <td>Religion</td>
+          <td>Tecnologia</td>
+        </tr>
+        <tr>
+          <td>13:35-14:30</td>
+          <td>Frances</td>
+          <td>Tecnologia</td>
+          <td>Frances</td>
+          <td>Tecnologia</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+            <td colspan="5">Total de Asignaturas</td>
+            <td>12</td>
+        </tr>
+      </tfoot>
+      <!--tbdoy es opcional mientras que no le pongas a la tabla thedad si se le pone ya es obligatorio para conseguir la semantica correcta -->
+    </table>
+  </body>
+</html>
